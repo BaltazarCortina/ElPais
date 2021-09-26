@@ -41,10 +41,6 @@ footer {
     text-align: center;
 }
 
-.section-name {
-
-}
-
 .clearfix::after {
     content: "";
     clear: both;
