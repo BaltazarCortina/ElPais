@@ -1,23 +1,6 @@
-header {
-    height: 181px;
-    padding-top: 90px;
-    box-sizing: border-box;
-    background-color: #28979b;
-    text-align: center;
-}
-
-main {
-    max-width: 80rem;
-    margin: auto;
-    padding: 0 1rem;
-    box-sizing: border-box;
-}
-
 article {
     width: 50rem;
-    height: 600px;
     float: left;
-    padding-top: 300px;
     box-sizing: border-box;
     background-color: #9b8a28;
     text-align: center;
@@ -33,16 +16,31 @@ aside {
     text-align: center;
 }
 
-footer {
-    height: 334px;
-    padding-top: 160px;
+.main-header {
+    height: 181px;
+    padding-top: 90px;
     box-sizing: border-box;
-    background-color: #9b2828;
+    background-color: #28979b;
     text-align: center;
+}
+
+.main-section {
+    max-width: 80rem;
+    margin: auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+.main-footer {
+    height: 334px;
+    padding-top: 160px;
+    box-sizing: border-box;
+    background-color: #9b2828;
+    text-align: center;
+}
