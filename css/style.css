@@ -1,9 +1,43 @@
+@font-face {
+    font-family: "ReithSerif";
+    src: url("../fonts/BBCReithSans_Md.ttf");
+  }
+
+body {
+    background-color: #dfdfdf;
+}
+
 article {
     width: 50rem;
     float: left;
+    margin: 16px 0 24px;
     box-sizing: border-box;
-    background-color: #9b8a28;
-    text-align: center;
+    font-family: ReithSerif,Helvetica,Arial,sans-serif;
+    background-color: white;
+    color: #3F3F42;
+}
+
+article header {
+    padding-bottom: 24px;
+    border-bottom: solid 1px #bababa;
+}
+
+article figure {
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+article figcaption {
+    padding: 1rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.285;
+    background-color: #3F3F42;
+    color: #eee;
+}
+
+article img {
+    width: 100%;
 }
 
 aside {
@@ -14,6 +48,12 @@ aside {
     box-sizing: border-box;
     background-color: #289b3b;
     text-align: center;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 1.09;
 }
 
 .main-header {
@@ -43,4 +83,61 @@ aside {
     box-sizing: border-box;
     background-color: #9b2828;
     text-align: center;
+}
+
+.published-time {
+    margin-top: 16px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.23;
+    color: #696969;
+}
+
+.share{
+    margin-top: 16px;
+}
+
+.share button {
+    display: block;
+    float: left;
+    padding: 0 11px;
+    border: solid 1px transparent;
+    font-size: 1.125rem;
+    line-height: calc(2.75rem - 2px);
+    background-color: #B80000;
+    
+}
+
+.share button svg {
+    color: #fff;
+}
+
+.btn {
+    float: left;
+    margin-left: 8px;
+}
+
+.btn a {
+    display: inline-block;
+    height: 26px;
+    padding: 16px 16px 0;
+    border: solid 1px #DB7F7F;
+    font-size: 0.9rem;
+}
+
+.btn a:link, .btn a:visited {
+    text-decoration: none;
+    color: #3F3F42;
+}
+
+.img-source {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    z-index: 1;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    background-color: #3F3F42;
+    color: #eee;
 }
