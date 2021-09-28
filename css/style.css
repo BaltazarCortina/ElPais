@@ -1,10 +1,11 @@
 @font-face {
-    font-family: "ReithSerif";
-    src: url("../fonts/BBCReithSans_Md.ttf");
-  }
+    font-family: "ReithSerifBold";
+    src: url("../fonts/BBCReithSans_Bd.ttf");
+}
 
-body {
-    background-color: #dfdfdf;
+@font-face {
+    font-family: "ReithSerif";
+    src: url("../fonts/BBCReithSans_Rg.ttf");
 }
 
 article {
@@ -12,13 +13,13 @@ article {
     float: left;
     margin: 16px 0 24px;
     box-sizing: border-box;
-    font-family: ReithSerif,Helvetica,Arial,sans-serif;
+    font-family: ReithSerifBold,Helvetica,Arial,sans-serif;
     background-color: white;
     color: #3F3F42;
 }
 
 article header {
-    padding-bottom: 24px;
+    padding-bottom: 16px;
     border-bottom: solid 1px #bababa;
 }
 
@@ -28,6 +29,8 @@ article figure {
 }
 
 article figcaption {
+    position: relative;
+    bottom: 4px;
     padding: 1rem;
     font-size: 0.875rem;
     font-weight: 400;
@@ -40,11 +43,29 @@ article img {
     width: 100%;
 }
 
+article p {
+    margin: 1rem 0;
+    max-width: 36.25rem;
+    font-family: ReithSerif,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.375;
+}
+
+article section {
+    margin: 1.5rem 0;
+    padding-top: 1.5rem;
+}
+
+article address {
+    margin-top: 1rem;
+    font-size: 0.8125rem;
+}
+
 aside {
     width: 316px;
-    height: 600px;
+    height: 2290px;
     float: right;
-    padding-top: 300px;
+    padding-top: 1145px;
     box-sizing: border-box;
     background-color: #289b3b;
     text-align: center;
@@ -54,6 +75,27 @@ h1 {
     font-size: 2.75rem;
     font-weight: 500;
     line-height: 1.09;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 0.125rem solid #B80000;
+    font-family: ReithSerif,Helvetica,Arial,sans-serif;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+p a:link, p a:visited {
+    color: #3F3F42;
+}
+
+p a:hover {
+    color: #B80000;
+}
+
+li.btn:first-of-type  {
+    margin-left: 0;
 }
 
 .main-header {
@@ -85,12 +127,34 @@ h1 {
     text-align: center;
 }
 
+.section {
+    margin-bottom: 1rem;
+}
+
+.section a:link, .section a:visited {
+    text-decoration: none;
+    color: #3F3F42;
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-family: ReithSerif,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+
+}
+
 .published-time {
     margin-top: 16px;
+    font-family: ReithSerif,Helvetica,Arial,sans-serif;
     font-size: 0.8125rem;
     font-weight: 400;
     line-height: 1.23;
     color: #696969;
+}
+
+.author a:link, .author a:visited {
+    text-decoration: none;
+    color: #3F3F42;
 }
 
 .share{
@@ -101,20 +165,36 @@ h1 {
     display: block;
     float: left;
     padding: 0 11px;
+    margin-right: 8px;
     border: solid 1px transparent;
     font-size: 1.125rem;
     line-height: calc(2.75rem - 2px);
     background-color: #B80000;
-    
+    color: #fff;
 }
 
-.share button svg {
+.share button:hover {
+    background-color: #3F3F42;
     color: #fff;
+}
+
+.share-social {
+    float: left;
+}
+
+.share-send {
+    float: right;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 2.5rem;
+    margin-left: 8px;
 }
 
 .btn {
     float: left;
-    margin-left: 8px;
+    margin: 0 8px 8px 0;
 }
 
 .btn a {
@@ -130,14 +210,91 @@ h1 {
     color: #3F3F42;
 }
 
+.btn a:hover {
+    background-color: #B80000;
+    color: #fff;
+}
+
 .img-source {
     position: absolute;
     bottom: 50px;
     right: 0;
     z-index: 1;
     padding: 0.25rem 0.5rem;
+    font-family: ReithSerif,Helvetica,Arial,sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
     background-color: #3F3F42;
     color: #eee;
+}
+
+.p-bold {
+    font-family: ReithSerifBold,Helvetica,Arial,sans-serif;
+}
+
+.p-italic {
+    font-style: italic;
+}
+
+.more-stories {
+    margin: 1.5rem 0;
+    font-family: ReithSerif,Helvetica,Arial,sans-serif;
+    font-size: 1.125rem;
+}
+
+.more-stories a:link, .more-stories a:visited {
+    text-decoration: none;
+    color: #696969;
+}
+
+.more-stories:nth-child(2) a:link, .more-stories:nth-child(2) a:visited {
+    text-decoration: none;
+    color: #3F3F42;
+}
+
+.more-stories a:hover, .more-stories:nth-child(2) a:hover {
+    text-decoration: underline;
+    color: #B80000;
+}
+
+.the-trust-project {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.the-trust-project img {
+    position: relative;
+    top: 6px;
+    height: 1.5rem;
+    width: auto;
+}
+
+.the-trust-project .more-info {
+    position: relative;
+    top: 12px;
+    float: right;
+}
+
+.the-trust-project a:link, .the-trust-project a:visited {
+    text-decoration: none;
+    color: #3F3F42;
+}
+
+.the-trust-project a:hover {
+    text-decoration: underline;
+    color: #B80000;
+}
+
+.other-news {
+    margin-top: 1rem;
+}
+
+.other-news a:link, .other-news a:visited {
+    text-decoration: none;
+    color: #3F3F42;
+}
+
+.other-news a:hover {
+    text-decoration: underline;
+    color: #B80000;
 }
